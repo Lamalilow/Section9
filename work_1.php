@@ -6,4 +6,4 @@ function resultArea($i, $w)
     $area = $i*$w;
     echo "Площадь равна ".$area." при ширине ".$i." и высоте ". $w;
 }
-resultArea(2,4);
+resultArea(4,5);
