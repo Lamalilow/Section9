@@ -1,13 +1,17 @@
 <?php
 function resultProst($number)
 {
-    for ($j = 2; $j < $number; $j++) { // проверить, делится ли число..
+    for ($i = 2; $i < $number; $i++) { // проверить, делится ли число..
 
-        if ($number % $j == 0)
-            echo "норм";
+        if ($number % $i == 0)
+            return false;
         else
-            echo "мегаплох";// не подходит, берём следующее
+            return true;
     }
 
 }
-resultProst(4);
+$num = resultProst(49);
+if($num == false)
+    echo "число непростое";
+else
+    echo "число простое";
